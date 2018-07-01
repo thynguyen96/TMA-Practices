@@ -1,0 +1,28 @@
+<div flex="50" flex-offset="25">
+    <md-card>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">User Form</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <form ng-submit="formSubmit()" class="form" novalidate>
+                <div layout="column">
+                    <md-input-container>
+                        <label>Username</label>
+                        <input type="text" name="username" ng-model="username" required>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Password</label>
+                        <input type="password" name="password" ng-model="password" required>
+                    </md-input-container>
+                </div>
+                <md-card-content>
+                    <md-card-actions layout="row" layout-align="end center">
+                        <md-button type="submit" class="md-raised md-primary">Submit</md-button>
+                    </md-card-actions>
+            </form>
+    </md-card>
+</div>
+
+<!-- https://codepen.io/PatAtTC/pen/ZOXYaw -->
